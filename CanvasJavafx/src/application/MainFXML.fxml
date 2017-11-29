@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="625.0" prefWidth="625.0" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="510.0" layoutX="56.0" layoutY="76.0" stroke="BLACK" strokeType="INSIDE" width="510.0" />
+      <Canvas fx:id="canvas" height="510.0" layoutX="56.0" layoutY="76.0" width="510.0" />
+      <TextField fx:id="txtX" layoutX="217.0" layoutY="25.0" prefHeight="25.0" prefWidth="41.0" />
+      <TextField fx:id="txtY" layoutX="268.0" layoutY="25.0" prefHeight="25.0" prefWidth="41.0" />
+      <Label layoutX="211.0" layoutY="29.0" text="x" />
+      <Label layoutX="262.0" layoutY="29.0" text="y" />
+      <Button fx:id="btnAdd" layoutX="319.0" layoutY="25.0" mnemonicParsing="false" onAction="#addPoint" text="Add Point" />
+      <Label layoutX="40.0" layoutY="59.0" text="0,0" />
+      <Label layoutX="566.0" layoutY="578.0" text="100,100" />
+      <Label layoutX="217.0" layoutY="51.0" text="*between 0 and100" textFill="RED" />
+      <Button fx:id="btnClear" layoutX="482.0" layoutY="25.0" mnemonicParsing="false" onAction="#clearCanvas" text="Clear Canvas" />
+   </children>
+</AnchorPane>
